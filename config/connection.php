@@ -3,8 +3,8 @@ session_start();
 
 $servername = "localhost";
 $username = "root";
-$password = "my_password";
-$dbname = "evsu_qrcode";
+$password = "";
+$dbname = "qrcode";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
