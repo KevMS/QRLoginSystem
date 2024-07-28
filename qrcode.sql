@@ -39,14 +39,6 @@ CREATE TABLE `accounts` (
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `accounts`
---
-
-INSERT INTO `accounts` (`Userid`, `Firstname`, `Lastname`, `Username`, `Password`, `Email`, `role`, `qrID`, `date`) VALUES
-(1, 'Kevin', 'Saludaga', 'kevzkie213', 'e10adc3949ba59abbe56e057f20f883e', 'kevzkie213@gmail.com', 'admin', 'Kevin-67e302c4b9e2f0511d101dcda767f9818208b34e70dd0b4910aa5c226c2c50f6', '2023-05-19 06:46:12'),
-(2, 'James', 'Sanchez', 'james123', 'e10adc3949ba59abbe56e057f20f883e', 'dagat213@gmail.com', 'user', 'James-9ba36afc4e560bf811caefc0c7fddddf5bdba06b7669a117a1e194b54205c06a', '2023-05-20 02:45:10');
-
 -- --------------------------------------------------------
 
 --
@@ -81,22 +73,6 @@ CREATE TABLE `loggedin_history` (
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `loggedin_history`
---
-
-INSERT INTO `loggedin_history` (`LoggedinID`, `UserID`, `Username`, `role`, `OTP`, `login_type`, `date`) VALUES
-(1, '1', 'kevzkie213', 'user', '518433', 0, '2023-05-19 07:41:04'),
-(2, '1', 'kevzkie213', '', NULL, 1, '2023-05-19 07:45:40'),
-(3, '2', 'james123', '', NULL, 1, '2023-05-20 02:47:55'),
-(4, '2', 'james123', '', NULL, 1, '2023-05-20 03:20:42'),
-(5, '2', 'james123', '', NULL, 1, '2023-05-20 03:36:26'),
-(6, '2', 'james123', '', NULL, 1, '2023-05-20 03:45:32'),
-(7, '1', 'kevzkie213', '', NULL, 1, '2023-05-20 04:13:39'),
-(8, '1', 'kevzkie213', '', NULL, 1, '2023-05-20 04:15:09'),
-(9, '1', 'kevzkie213', '', NULL, 1, '2023-05-20 04:16:46'),
-(10, '2', 'james123', '', NULL, 1, '2023-05-20 04:18:33');
-
 -- --------------------------------------------------------
 
 --
@@ -109,13 +85,6 @@ CREATE TABLE `search` (
   `description` varchar(250) DEFAULT NULL,
   `link` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `search`
---
-
-INSERT INTO `search` (`postID`, `title`, `description`, `link`) VALUES
-(1, 'users', 'shows the list of users', 'users.php');
 
 -- --------------------------------------------------------
 
