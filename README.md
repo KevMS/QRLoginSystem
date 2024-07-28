@@ -11,7 +11,8 @@ This project was created for a school assignment and focuses on enhancing login 
 2. Multiple Login Methods:
 
    - Email and Password with OTP: Users can log in using their username and password, followed by a one-time password (OTP) for added security.
-- QR Code Login: Users can log in by scanning their unique QR code.
+
+   - QR Code Login: Users can log in by scanning their unique QR code.
 
 3. Improved Security:
 
